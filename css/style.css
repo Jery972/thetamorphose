@@ -17,6 +17,7 @@ html {
   --link-hover-color: #bbbcbc;
   --header1-responsive: calc(2rem + 1vw);
   --header2-responsive: calc(1.2rem + 1vw);
+  --menu-button: 1.3rem;
 }
 .flex {
   display: flex;
@@ -60,7 +61,7 @@ nav img {
   justify-content: space-evenly;
   list-style-type: none;
   gap: 1rem;
-  font-size: 1.3rem;
+  font-size: var(--menu-button);
   font-weight: bold;
 }
 .nav-links a:link,
@@ -72,13 +73,16 @@ a:visited {
   color: var(--link-hover-color);
   text-decoration: none;
 }
-#menuIcon {
+#menu-icon {
   display: none;
 }
-#menuIcon img {
+#menu-icon img {
   width: 3rem;
   height: 3rem;
   margin: 0.5rem;
+}
+#drop-menu-responsive {
+  display: none;
 }
 /* Burger Menu responsive */
 @media screen and (max-width: 700px) {
@@ -91,9 +95,52 @@ a:visited {
   h2 {
     font-size: var(--header2-responsive);
   }
-  #menuIcon {
+  #menu-icon {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 4rem;
+  }
+  #menu-icon a {
+    height: 4rem;
+  }
+  #drop-menu-responsive {
+    display: none;
+    background: #efecec;
+    border-radius: 3px;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 20px;
+    box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.25);
+  }
+  .nav-links-responsive {
+    list-style-type: none;
+  }
+  .nav-links-responsive li {
+    font-size: var(--menu-button);
+    font-weight: bold;
+    border-bottom: 1px solid #e1dede;
+  }
+  .nav-links-responsive li:last-child {
+    border-bottom: none;
+  }
+  .nav-links-responsive li:hover {
+    background: var(--main-color);
+  }
+  .nav-links-responsive li:first-child:hover {
+    background: var(--main-color);
+    border-radius: 3px 3px 0px 0px;
+  }
+  .nav-links-responsive li:last-child:hover {
+    background: var(--main-color);
+    border-radius: 0px 0px 3px 3px;
+  }
+  .nav-links-responsive a {
+    text-decoration: none;
+    display: flex;
+    padding: 1rem;
+  }
+  .nav-links-responsive a:hover {
+    color: #f1f7bc;
   }
 }
