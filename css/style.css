@@ -84,6 +84,10 @@ a:visited {
 #drop-menu-responsive {
   display: none;
 }
+.nav-links-responsive {
+  text-decoration: none;
+  list-style-type: none;
+}
 /* Burger Menu responsive */
 @media screen and (max-width: 700px) {
   .nav-links {
