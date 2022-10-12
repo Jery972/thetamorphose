@@ -1,6 +1,8 @@
 let menuToggle = false;
 
 document.onclick = function (e) {
+  burgerImg = document.getElementById("burger-img");
+  menuResponsive = document.getElementById("nav-links");
   if (
     menuToggle &&
     e.target.id !== "burger-img" &&
@@ -15,15 +17,15 @@ document.onclick = function (e) {
 
 function swapMenuImage() {
   burgerImg = document.getElementById("burger-img");
-  menuResponsive = document.getElementById("drop-menu-responsive");
-  if (!menuToggle) {
-    burgerImg.src = "icons/menuClose.png";
-    menuResponsive.style.display = "block";
-    menuToggle = true;
-  } else {
+  menuResponsive = document.getElementById("nav-links");
+  if (menuToggle) {
     burgerImg.src = "icons/menu.png";
     menuResponsive.style.display = "none";
     menuToggle = false;
+  } else {
+    burgerImg.src = "icons/menuClose.png";
+    menuResponsive.style.display = "flex";
+    menuToggle = true;
   }
   return false;
 }

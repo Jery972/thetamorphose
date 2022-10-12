@@ -48,9 +48,6 @@ h2 {
   color: var(--h-color);
   font-weight: normal;
 }
-nav {
-  margin: 0rem 1rem 0rem 1rem;
-}
 nav img {
   width: 90%;
   height: 2rem;
@@ -61,9 +58,11 @@ nav img {
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
-  gap: 1rem;
   font-size: var(--menu-button);
   font-weight: bold;
+}
+#nav-links a {
+  padding: 0.7rem;
 }
 #nav-links a:link,
 a:visited {
@@ -85,12 +84,8 @@ a:visited {
 #drop-menu-responsive {
   display: none;
 }
-/* #nav-links-responsive {
-  text-decoration: none;
-  list-style-type: none;
-} */
 
-/* Burger Menu responsive */
+/* Responsive */
 @media screen and (max-width: 700px) {
   h1 {
     font-size: var(--header1-responsive);
@@ -108,15 +103,14 @@ a:visited {
     height: 4rem;
   }
   #nav-links {
-    /* display: none; */
+    display: none;
     background: #efecec;
     flex-direction: column;
     border-radius: 3px;
     position: absolute;
-    margin-top: -23px;
-    margin-left: 20px;
+    margin-left: 0.8rem;
+    margin-top: 4.5rem;
     padding: 0;
-    gap: 0rem;
     box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.25);
   }
   #nav-links a {
@@ -146,46 +140,6 @@ a:visited {
     background: var(--main-color);
     border-radius: 0px 0px 3px 3px;
   }
-
-  /* #drop-menu-responsive {
-    display: none;
-    background: #efecec;
-    border-radius: 3px;
-    position: absolute;
-    margin-top: -23px;
-    margin-left: 20px;
-    box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.25);
-  }
-  .nav-links-responsive {
-    list-style-type: none;
-  }
-  .nav-links-responsive li {
-    font-size: var(--menu-button);
-    font-weight: bold;
-    border-bottom: 1px solid #e1dede;
-  }
-  .nav-links-responsive li:last-child {
-    border-bottom: none;
-  }
-  .nav-links-responsive li:hover {
-    background: var(--main-color);
-  }
-  .nav-links-responsive li:first-child:hover {
-    background: var(--main-color);
-    border-radius: 3px 3px 0px 0px;
-  }
-  .nav-links-responsive li:last-child:hover {
-    background: var(--main-color);
-    border-radius: 0px 0px 3px 3px;
-  }
-  .nav-links-responsive a {
-    text-decoration: none;
-    display: flex;
-    padding: 1rem;
-  }
-  .nav-links-responsive a:hover {
-    color: #f1f7bc;
-  } */
 }
 
 /* Footer */
