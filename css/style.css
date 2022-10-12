@@ -34,6 +34,9 @@ h1 {
 h2 {
   font-size: 1.9rem;
 }
+.title-section {
+  margin: 2rem 0 2rem 0;
+}
 
 /* Header */
 .main-head {
@@ -85,6 +88,49 @@ a:visited {
   display: none;
 }
 
+/* Footer */
+.first-foot {
+  display: flex;
+  background: var(--main-color);
+  height: 6rem;
+}
+.last-foot {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: var(--second-color);
+  color: #ffffff;
+  height: 7rem;
+}
+.last-foot h2 {
+  font-weight: normal;
+}
+
+/* Main section */
+.main-section {
+  margin: 2rem 10% 4rem 10%;
+}
+
+/* Biographie */
+.biographie {
+  display: flex;
+}
+.biographie figure {
+  background-position: 50% 50%;
+  width: 50%;
+  min-height: 250px;
+  background-size: cover;
+}
+.biographie p {
+  width: 50%;
+  padding: 0.3rem 3.8rem;
+  font-size: 1.9rem;
+  color: var(--text-color);
+  text-align: left;
+  line-height: 1.5;
+}
+
 /* Responsive */
 @media screen and (max-width: 700px) {
   h1 {
@@ -93,7 +139,11 @@ a:visited {
   h2 {
     font-size: var(--header2-responsive);
   }
+  .main-section {
+    margin: 2rem;
+  }
   #menu-icon {
+    margin-left: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -140,22 +190,18 @@ a:visited {
     background: var(--main-color);
     border-radius: 0px 0px 3px 3px;
   }
-}
-
-/* Footer */
-.first-foot {
-  display: flex;
-  background: var(--main-color);
-  height: 6rem;
-}
-.last-foot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--second-color);
-  color: #ffffff;
-  height: 7rem;
-}
-.last-foot h2 {
-  font-weight: normal;
+  .biographie {
+    flex-direction: column;
+  }
+  .biographie p {
+    width: 100%;
+    padding: 0.3rem 2.5rem;
+    font-size: var(--header2-responsive);
+  }
+  .biographie figure {
+    background-position: 50% 30%;
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+  }
 }
