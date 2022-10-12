@@ -34,6 +34,7 @@ h1 {
 h2 {
   font-size: 1.9rem;
 }
+
 /* Header */
 .main-head {
   text-align: center;
@@ -88,6 +89,7 @@ a:visited {
   text-decoration: none;
   list-style-type: none;
 }
+
 /* Burger Menu responsive */
 @media screen and (max-width: 700px) {
   .nav-links {
@@ -147,4 +149,22 @@ a:visited {
   .nav-links-responsive a:hover {
     color: #f1f7bc;
   }
+}
+
+/* Footer */
+.first-foot {
+  display: flex;
+  background: var(--main-color);
+  height: 6rem;
+}
+.last-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--second-color);
+  color: #ffffff;
+  height: 7rem;
+}
+.last-foot h2 {
+  font-weight: normal;
 }

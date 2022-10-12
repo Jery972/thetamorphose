@@ -4,6 +4,7 @@ document.onclick = function (e) {
   if (
     menuToggle &&
     e.target.id !== "burger-img" &&
+    e.target.id !== "a-burger-img" &&
     e.target.id !== "drop-menu-responsive"
   ) {
     burgerImg.src = "icons/menu.png";
