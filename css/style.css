@@ -18,6 +18,7 @@ html {
   --header1-responsive: calc(2rem + 1vw);
   --header2-responsive: calc(1.2rem + 1vw);
   --menu-button: 1.3rem;
+  --menu-button-responsive: calc(0.7rem + 1vw);
 }
 .flex {
   display: flex;
@@ -172,7 +173,7 @@ a:visited {
     color: #f1f7bc;
   }
   #nav-links li {
-    font-size: var(--menu-button);
+    font-size: var(--menu-button-responsive);
     font-weight: bold;
     border-bottom: 1px solid #e1dede;
   }
