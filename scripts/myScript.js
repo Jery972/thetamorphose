@@ -9,7 +9,7 @@ document.onclick = function (e) {
     e.target.id !== "a-burger-img" &&
     e.target.id !== "nav-links"
   ) {
-    burgerImg.src = "icons/menu.png";
+    burgerImg.src = "images/icons/menu.png";
     menuResponsive.style.display = "none";
     menuToggle = false;
   }
@@ -19,11 +19,11 @@ function swapMenuImage() {
   burgerImg = document.getElementById("burger-img");
   menuResponsive = document.getElementById("nav-links");
   if (menuToggle) {
-    burgerImg.src = "icons/menu.png";
+    burgerImg.src = "images/icons/menu.png";
     menuResponsive.style.display = "none";
     menuToggle = false;
   } else {
-    burgerImg.src = "icons/menuClose.png";
+    burgerImg.src = "images/icons/menuClose.png";
     menuResponsive.style.display = "flex";
     menuToggle = true;
   }
