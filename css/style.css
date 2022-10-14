@@ -132,6 +132,19 @@ a:visited {
   text-align: left;
   line-height: 1.5;
 }
+.text-bio {
+  font-size: 1.9rem;
+  color: var(--text-color);
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 3rem;
+  padding: 0 3rem;
+}
+#img-fin-bio {
+  width: 100%;
+  padding: 3rem 25%;
+  margin: auto;
+}
 
 /* Responsive */
 @media screen and (max-width: 700px) {
@@ -198,6 +211,10 @@ a:visited {
     width: 100%;
     padding: 0.3rem 2rem;
     font-size: var(--header2-responsive);
+  }
+  .text-bio {
+    font-size: var(--header2-responsive);
+    padding: 0.3rem 2rem;
   }
   .biographie figure {
     background-position: 50% 30%;
