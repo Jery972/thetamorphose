@@ -29,3 +29,9 @@ function swapMenuImage() {
   }
   return false;
 }
+
+function toggleTextReview() {
+  textHideReview = document.getElementsByClassName("text-hide")[0];
+  textHideReview.style.display = "block";
+  return false;
+}
