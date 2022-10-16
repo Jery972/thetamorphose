@@ -218,7 +218,6 @@ a:visited {
 }
 .text-visible {
   margin-bottom: 1.5rem;
-  background: red;
 }
 .hide-panel {
   border: solid var(--second-color);
