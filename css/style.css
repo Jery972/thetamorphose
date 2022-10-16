@@ -208,8 +208,16 @@ a:visited {
   margin-right: 3rem;
 }
 .text-hide {
-  padding: 0 2rem 2rem 7rem;
-  /* display: none; */
+  padding: 0 2rem 0 7rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.active-button-hide {
+  color: var(--main-color);
+}
+.active-button-hide img {
+  content: url("/images/icons/minus.png");
 }
 
 /* Responsive */

@@ -30,8 +30,18 @@ function swapMenuImage() {
   return false;
 }
 
-function toggleTextReview() {
-  textHideReview = document.getElementsByClassName("text-hide")[0];
-  textHideReview.style.display = "block";
-  return false;
+//TEMOIGNAGES ACCORDION
+var acc = document.getElementsByClassName("open-hide-button");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active-button-hide");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
 }
