@@ -132,19 +132,20 @@ a:visited {
   justify-content: center;
 }
 .div-button-contact a {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5rem;
   background-color: #ffffff;
   border: solid var(--second-color);
+  text-decoration: none;
+  border-radius: 5rem;
   color: var(--second-color);
   font-size: 2rem;
   padding: 1.2rem;
   width: 30rem;
   cursor: pointer;
   transition: 0.5s;
+  font-weight: bold;
 }
 .div-button-contact a:hover {
   background-color: var(--second-color);
