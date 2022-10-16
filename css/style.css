@@ -246,7 +246,7 @@ a:visited {
   color: var(--main-color);
 }
 .active-button-hide img {
-  content: url("/images/icons/minus.png");
+  content: url("images/icons/minus.png");
 }
 
 /* Responsive */
