@@ -36,6 +36,18 @@ h2 {
 }
 
 /* Header */
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-menu img {
+  height: 128px;
+}
+.header-menu div {
+  text-align: left;
+  line-height: 3rem;
+}
 .main-head {
   text-align: center;
   padding-top: 2rem;
@@ -151,12 +163,14 @@ a:visited {
   display: flex;
   gap: 3rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 .review {
   flex: 1;
   padding: 3rem;
   box-shadow: 5px 10px 20px 0px #8888882e;
   border-radius: 40px;
+  min-width: 28rem;
 }
 .review p {
   font-size: 1.5rem;
@@ -205,6 +219,9 @@ a:visited {
   }
   h2 {
     font-size: var(--header2-responsive);
+  }
+  .header-menu img {
+    height: 96px;
   }
   #menu-icon {
     margin-left: 1.5rem;
@@ -271,5 +288,8 @@ a:visited {
     width: 100%;
     min-height: 300px;
     background-size: cover;
+  }
+  .review {
+    padding: 2rem;
   }
 }
