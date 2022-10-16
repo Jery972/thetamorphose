@@ -126,6 +126,33 @@ a:visited {
   padding-right: 2rem;
 }
 
+/* Contact Button */
+.div-button-contact {
+  display: flex;
+  justify-content: center;
+}
+.div-button-contact a {
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5rem;
+  background-color: #ffffff;
+  border: solid var(--second-color);
+  color: var(--second-color);
+  font-size: 2rem;
+  padding: 1.2rem;
+  width: 30rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.div-button-contact a:hover {
+  background-color: var(--second-color);
+  border: solid var(--second-color);
+  color: #ffffff;
+  transition: 0.5s;
+}
+
 /* Biographie */
 .biographie {
   display: flex;
@@ -221,28 +248,6 @@ a:visited {
 .active-button-hide img {
   content: url("/images/icons/minus.png");
 }
-.div-button-contact {
-  display: flex;
-  justify-content: center;
-}
-.div-button-contact button {
-  align-items: center;
-  border-radius: 5rem;
-  background-color: #ffffff;
-  border: solid var(--second-color);
-  color: var(--second-color);
-  font-size: 20px;
-  padding: 12px;
-  width: 300px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.div-button-contact button:hover {
-  background-color: var(--second-color);
-  border: solid var(--second-color);
-  color: #ffffff;
-  transition-duration: 0.5s;
-}
 
 /* Responsive */
 @media screen and (max-width: 700px) {
@@ -323,5 +328,9 @@ a:visited {
   }
   .temoignages-line {
     margin-bottom: 3rem;
+  }
+  .div-button-contact a {
+    font-size: 1.3rem;
+    width: 15rem;
   }
 }
