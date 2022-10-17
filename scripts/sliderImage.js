@@ -6,7 +6,7 @@ let count = 0;
 
 let timer = setTimeout(() => {
   showNextItem();
-}, 5000);
+}, 8000);
 
 function showNextItem() {
   items[count].classList.remove("active");
@@ -21,7 +21,7 @@ function showNextItem() {
   clearTimeout(timer);
   timer = setTimeout(() => {
     showNextItem();
-  }, 5000);
+  }, 8000);
 }
 
 function showPreviousItem() {
@@ -37,7 +37,7 @@ function showPreviousItem() {
   clearTimeout(timer);
   timer = setTimeout(() => {
     showPreviousItem();
-  }, 5000);
+  }, 8000);
 }
 
 function keyPress(e) {
