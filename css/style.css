@@ -41,13 +41,20 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-.header-menu img {
+.index-link-header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.index-link-header-menu img {
   height: 128px;
 }
-.header-menu div {
+.index-link-header-menu div {
   text-align: left;
   line-height: 3rem;
 }
+
 .main-head {
   text-align: center;
   padding-top: 2rem;
@@ -301,7 +308,7 @@ a:visited {
   h2 {
     font-size: var(--header2-responsive);
   }
-  .header-menu img {
+  .index-link-header-menu img {
     height: 96px;
   }
   #menu-icon {
