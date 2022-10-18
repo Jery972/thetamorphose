@@ -7,37 +7,48 @@ let count = 0;
 let timer = setTimeout(() => {
   showNextItem();
 }, 8000);
+let fadeTimer;
 
 function showNextItem() {
+  items[count].classList.add("leaving");
   items[count].classList.remove("active");
+  clearTimeout(fadeTimer);
 
-  if (count < itemCount - 1) {
-    count++;
-  } else {
-    count = 0;
-  }
+  fadeTimer = setTimeout(() => {
+    items[count].classList.remove("leaving");
+    if (count < itemCount - 1) {
+      count++;
+    } else {
+      count = 0;
+    }
 
-  items[count].classList.add("active");
-  clearTimeout(timer);
-  timer = setTimeout(() => {
-    showNextItem();
-  }, 8000);
+    items[count].classList.add("active");
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      showNextItem();
+    }, 8000);
+  }, 1400);
 }
 
 function showPreviousItem() {
+  items[count].classList.add("leaving");
   items[count].classList.remove("active");
+  clearTimeout(fadeTimer);
 
-  if (count > 0) {
-    count--;
-  } else {
-    count = itemCount - 1;
-  }
+  fadeTimer = setTimeout(() => {
+    items[count].classList.remove("leaving");
+    if (count > 0) {
+      count--;
+    } else {
+      count = itemCount - 1;
+    }
 
-  items[count].classList.add("active");
-  clearTimeout(timer);
-  timer = setTimeout(() => {
-    showPreviousItem();
-  }, 8000);
+    items[count].classList.add("active");
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      showPreviousItem();
+    }, 8000);
+  }, 1400);
 }
 
 function keyPress(e) {

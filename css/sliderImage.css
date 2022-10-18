@@ -77,6 +77,11 @@ button span {
   -webkit-animation: fadeImg 3s;
   animation: fadeImg 3s;
 }
+.slider img.leaving {
+  display: block;
+  -webkit-animation: fadeOut 1.5s;
+  animation: fadeOut 1.5s;
+}
 
 /* .slider-nav .arrow {
   flex: 0 0 15%;
@@ -108,6 +113,23 @@ button span {
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
