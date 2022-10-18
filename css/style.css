@@ -18,7 +18,7 @@ html {
   --header1-responsive: calc(2rem + 1vw);
   --header2-responsive: calc(1.2rem + 1vw);
   --menu-button: 1.3rem;
-  --menu-button-responsive: calc(0.7rem + 1vw);
+  --menu-button-responsive: 1.5rem;
 }
 
 body {
@@ -97,6 +97,49 @@ a:visited {
 }
 #drop-menu-responsive {
   display: none;
+}
+#nav-thetahealing {
+  display: none;
+  margin-top: 1.5rem;
+  margin-left: -3.5rem;
+  position: absolute;
+  z-index: 2;
+  list-style-type: none;
+  background: #efecec;
+  flex-direction: column;
+  border-radius: 3px;
+  padding: 0;
+  box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+#nav-thetahealing a {
+  text-decoration: none;
+  display: flex;
+  padding: 1.4rem;
+  text-align: left;
+  color: var(--main-color);
+}
+#nav-thetahealing a:hover {
+  color: #f1f7bc;
+}
+#nav-thetahealing li {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-bottom: 1px solid #e1dede;
+}
+#nav-thetahealing li:last-child {
+  border-bottom: none;
+}
+#nav-thetahealing li:hover {
+  background: var(--main-color);
+}
+#nav-thetahealing li:first-child:hover {
+  background: var(--main-color);
+  border-radius: 3px 3px 0px 0px;
+}
+#nav-thetahealing li:last-child:hover {
+  background: var(--main-color);
+  border-radius: 0px 0px 3px 3px;
 }
 
 /* Footer */
@@ -281,17 +324,18 @@ a:visited {
     margin-top: 4.5rem;
     padding: 0;
     box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.25);
+    z-index: 1;
   }
   #nav-links a {
     text-decoration: none;
     display: flex;
-    padding: 1rem;
+    padding: 1.4rem;
   }
   #nav-links a:hover {
     color: #f1f7bc;
   }
   #nav-links li {
-    font-size: var(--menu-button-responsive);
+    /* font-size: 1.4rem; */
     font-weight: bold;
     border-bottom: 1px solid #e1dede;
   }
