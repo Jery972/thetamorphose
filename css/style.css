@@ -18,8 +18,7 @@ html {
   --header1-responsive: calc(2rem + 1vw);
   --header2-responsive: calc(1.3rem + 1vw);
   --p-responsive: calc(1.2rem + 1vw);
-  --menu-button: 1.3rem;
-  --menu-button-responsive: 1.5rem;
+  --menu-button: 1.4rem;
 }
 
 body {
@@ -106,7 +105,7 @@ a:visited {
 #menu-icon img {
   width: 3rem;
   height: 3rem;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem;
 }
 #drop-menu-responsive {
   display: none;
@@ -114,7 +113,7 @@ a:visited {
 #nav-thetahealing {
   display: none;
   margin-top: 1.5rem;
-  margin-left: -3.5rem;
+  margin-left: -4rem;
   position: absolute;
   z-index: 2;
   list-style-type: none;
@@ -136,7 +135,7 @@ a:visited {
   color: #f1f7bc;
 }
 #nav-thetahealing li {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
   border-bottom: 1px solid #e1dede;
 }
@@ -151,6 +150,49 @@ a:visited {
   border-radius: 3px 3px 0px 0px;
 }
 #nav-thetahealing li:last-child:hover {
+  background: var(--main-color);
+  border-radius: 0px 0px 3px 3px;
+}
+#nav-meditation {
+  display: none;
+  margin-top: 1.5rem;
+  /* margin-left: -3.5rem; */
+  position: absolute;
+  z-index: 2;
+  list-style-type: none;
+  background: #efecec;
+  flex-direction: column;
+  border-radius: 3px;
+  padding: 0;
+  box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+#nav-meditation a {
+  text-decoration: none;
+  display: flex;
+  padding: 1.4rem;
+  text-align: left;
+  color: var(--main-color);
+}
+#nav-meditation a:hover {
+  color: #f1f7bc;
+}
+#nav-meditation li {
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 1px solid #e1dede;
+}
+#nav-meditation li:last-child {
+  border-bottom: none;
+}
+#nav-meditation li:hover {
+  background: var(--main-color);
+}
+#nav-meditation li:first-child:hover {
+  background: var(--main-color);
+  border-radius: 3px 3px 0px 0px;
+}
+#nav-meditation li:last-child:hover {
   background: var(--main-color);
   border-radius: 0px 0px 3px 3px;
 }
@@ -439,10 +481,6 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 4rem;
-  }
-  #menu-icon a {
-    height: 4rem;
   }
   #nav-links {
     display: none;
@@ -450,8 +488,8 @@ a:visited {
     flex-direction: column;
     border-radius: 3px;
     position: absolute;
-    margin-left: 0.8rem;
-    margin-top: 4.5rem;
+    margin-left: 1rem;
+    margin-top: 5rem;
     padding: 0;
     box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.25);
     z-index: 1;
@@ -465,7 +503,6 @@ a:visited {
     color: #f1f7bc;
   }
   #nav-links li {
-    /* font-size: 1.4rem; */
     font-weight: bold;
     border-bottom: 1px solid #e1dede;
   }

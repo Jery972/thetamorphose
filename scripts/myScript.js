@@ -1,10 +1,12 @@
 let menuToggle = false;
 let menuThetaToggle = false;
+let menuMeditaToggle = false;
 
 document.onclick = function (e) {
   burgerImg = document.getElementById("burger-img");
   menuResponsive = document.getElementById("nav-links");
   menuTheta = document.getElementById("nav-thetahealing");
+  menuMedita = document.getElementById("nav-meditation");
   if (
     menuToggle &&
     e.target.id !== "burger-img" &&
@@ -18,6 +20,10 @@ document.onclick = function (e) {
   if (menuThetaToggle && e.target.id !== "link-nav-theta") {
     menuTheta.style.display = "none";
     menuThetaToggle = false;
+  }
+  if (menuMeditaToggle && e.target.id !== "link-nav-medita") {
+    menuMedita.style.display = "none";
+    menuMeditaToggle = false;
   }
 };
 
@@ -44,6 +50,17 @@ function openMenuTheta() {
   } else {
     menuTheta.style.display = "block";
     menuThetaToggle = true;
+  }
+  return false;
+}
+function openMenuMedita() {
+  menuMedita = document.getElementById("nav-meditation");
+  if (menuMeditaToggle) {
+    menuMedita.style.display = "none";
+    menuMeditaToggle = false;
+  } else {
+    menuMedita.style.display = "block";
+    menuMeditaToggle = true;
   }
   return false;
 }
