@@ -1,4 +1,4 @@
-const items = document.querySelectorAll("img");
+const items = document.querySelectorAll(".slideIMG");
 const itemCount = items.length;
 const nextItem = document.querySelector(".next");
 const previousItem = document.querySelector(".previous");
