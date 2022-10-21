@@ -46,6 +46,7 @@ p {
   align-items: center;
   justify-content: center;
 }
+
 .index-link-header-menu {
   display: flex;
   align-items: center;
@@ -192,7 +193,6 @@ a:visited {
 .description-quisuisje {
   display: flex;
   width: 50%;
-  /* min-width: 40rem; */
 }
 .description-quisuisje img {
   width: 50%;
@@ -213,7 +213,6 @@ a:visited {
 .description-thetahealing {
   display: flex;
   width: 50%;
-  /* min-width: 40rem; */
 }
 .description-thetahealing img {
   width: 50%;
@@ -231,6 +230,11 @@ a:visited {
 }
 .description-thetahealing p {
   font-size: 1.5rem;
+}
+.more-info {
+  text-decoration: underline;
+  padding: 1rem 0;
+  font-style: normal;
 }
 
 /* Qui suis-je */
@@ -393,6 +397,10 @@ a:visited {
   }
   p {
     font-size: var(--p-responsive);
+  }
+  .header-menu h2 {
+    width: 20rem;
+    line-height: normal;
   }
   .index-link-header-menu img {
     height: 96px;
