@@ -273,14 +273,26 @@ a:visited {
 .theta-page-description {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .theta-page-description p {
   margin-bottom: 2rem;
 }
 .theta-page-description img {
+  align-self: center;
   margin-bottom: 2rem;
   zoom: 1.3;
+}
+.theta-page-description ul {
+  list-style-position: inside;
+  margin-bottom: 2rem;
+}
+.theta-page-description ul > li {
+  font-size: 1.9rem;
+  line-height: 1.5;
+}
+.theta-page-description ul > p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 /* Retour de soins */
