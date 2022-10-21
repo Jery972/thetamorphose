@@ -16,7 +16,7 @@ html {
   --text-color: #333333;
   --link-hover-color: #bbbcbc;
   --header1-responsive: calc(2rem + 1vw);
-  --header2-responsive: calc(1.2rem + 1vw);
+  --header2-responsive: calc(1.3rem + 1vw);
   --p-responsive: calc(1.2rem + 1vw);
   --menu-button: 1.3rem;
   --menu-button-responsive: 1.5rem;
@@ -30,7 +30,7 @@ h1 {
   font-size: 2.8rem;
 }
 h2 {
-  font-size: 1.9rem;
+  font-size: 2rem;
 }
 p {
   font-size: 1.9rem;
