@@ -38,6 +38,9 @@ p {
 .title-section {
   margin: 2rem 0 2rem 0;
 }
+a {
+  color: var(--main-color);
+}
 
 /* Header */
 .header-menu {
