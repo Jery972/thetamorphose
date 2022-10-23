@@ -22,9 +22,6 @@ html {
 }
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 100vh;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   min-width: 32rem;
 }
@@ -73,7 +70,6 @@ li {
 }
 
 .main-head {
-  width: 100%;
   text-align: center;
   padding-top: 2rem;
   max-width: 125rem;
@@ -232,7 +228,6 @@ a:visited {
 
 /* Main section */
 .main-section {
-  width: 100%;
   max-width: 104rem;
   margin: 2rem auto 4rem auto;
   padding-left: 3rem;
