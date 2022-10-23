@@ -34,12 +34,18 @@ h2 {
 p {
   font-size: 1.9rem;
   line-height: 1.5;
+  color: var(--text-color);
 }
 .title-section {
   margin: 2rem 0 2rem 0;
 }
 a {
   color: var(--main-color);
+}
+li {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  color: var(--text-color);
 }
 
 /* Header */
@@ -87,11 +93,13 @@ nav img {
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
-  font-size: var(--menu-button);
   font-weight: bold;
 }
 #nav-links a {
   padding: 0.7rem;
+}
+#nav-links li {
+  font-size: var(--menu-button);
 }
 #nav-links a:link,
 a:visited {
@@ -159,7 +167,6 @@ a:visited {
 #nav-meditation {
   display: none;
   margin-top: 1.5rem;
-  /* margin-left: -3.5rem; */
   position: absolute;
   z-index: 2;
   list-style-type: none;
@@ -226,6 +233,9 @@ a:visited {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.main-section p {
+  margin-bottom: 2rem;
+}
 
 /* Accueil */
 .description-global {
@@ -234,6 +244,10 @@ a:visited {
   justify-content: center;
   font-style: italic;
   gap: 1rem;
+}
+.description-global p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
 }
 .description-quisuisje {
   display: flex;
@@ -251,10 +265,6 @@ a:visited {
   font-size: 1.9rem;
   margin-bottom: 0.5rem;
 }
-.description-quisuisje p {
-  font-size: 1.5rem;
-}
-
 .description-thetahealing {
   display: flex;
   width: 50%;
@@ -273,9 +283,6 @@ a:visited {
   font-size: 1.9rem;
   margin-bottom: 0.5rem;
 }
-.description-thetahealing p {
-  font-size: 1.5rem;
-}
 .more-info {
   text-decoration: underline;
   padding: 1rem 0;
@@ -283,35 +290,34 @@ a:visited {
 }
 
 /* Qui suis-je */
-.biographie {
+.biographie-top {
   display: flex;
 }
-.biographie figure {
+.biographie-top p {
+  padding: 0.3rem 3.5rem;
+}
+.biographie-top p:last-child {
+  margin-bottom: 0;
+}
+.biographie-top img {
   background-position: 50% 50%;
   width: 50%;
-  min-height: 250px;
-  background-size: cover;
-}
-.biographie p {
-  width: 50%;
-  padding: 0.3rem 3.5rem;
-  font-size: 1.9rem;
-  color: var(--text-color);
-  text-align: left;
-  line-height: 1.5;
-}
-.text-bio {
-  font-size: 1.9rem;
-  color: var(--text-color);
-  text-align: left;
-  line-height: 1.5;
-  margin-top: 3rem;
-  padding: 0 3rem;
+  max-height: 150rem;
+  object-fit: cover;
 }
 #img-fin-bio {
   width: 100%;
   padding: 3rem 25%;
   margin: auto;
+}
+.main-section ul {
+  list-style-position: inside;
+  margin-bottom: 2rem;
+}
+
+.main-section ul > p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 /* Thetahealing */
@@ -472,6 +478,9 @@ a:visited {
   p {
     font-size: var(--p-responsive);
   }
+  li {
+    font-size: var(--p-responsive);
+  }
   .header-menu h2 {
     width: 20rem;
     line-height: normal;
@@ -523,23 +532,17 @@ a:visited {
     background: var(--main-color);
     border-radius: 0px 0px 3px 3px;
   }
-  .biographie {
+  .biographie-top {
     flex-direction: column;
   }
-  .biographie p {
-    width: 100%;
-    padding: 0.3rem 2rem;
-    font-size: var(--p-responsive);
+  .biographie-top p {
+    padding: 0.3rem 0;
   }
-  .text-bio {
-    font-size: var(--header2-responsive);
-    padding: 0.3rem 2rem;
-  }
-  .biographie figure {
-    background-position: 50% 30%;
+  .biographie-top img {
+    object-position: 50% 30%;
     width: 100%;
-    min-height: 300px;
-    background-size: cover;
+    max-height: 40rem;
+    object-fit: cover;
   }
   .temoignages-line {
     margin-bottom: 3rem;
