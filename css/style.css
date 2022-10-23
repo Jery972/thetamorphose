@@ -8,6 +8,7 @@
   src: url("../fonts/Montserrat-Regular.ttf");
 }
 html {
+  height: 100%;
   font-size: 62.5%;
   background: #ffffff;
   --main-color: #43a28a;
@@ -22,6 +23,9 @@ html {
 }
 
 body {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 13rem;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   min-width: 32rem;
 }
@@ -208,6 +212,12 @@ a:visited {
 }
 
 /* Footer */
+.footer-section {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .first-foot {
   display: flex;
   background: var(--main-color);
