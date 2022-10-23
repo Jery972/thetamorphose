@@ -230,11 +230,20 @@ a:visited {
 .main-section {
   max-width: 104rem;
   margin: 2rem auto 4rem auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .main-section p {
   margin-bottom: 2rem;
+}
+.main-section ul {
+  list-style-position: inside;
+  margin-bottom: 2rem;
+}
+
+.main-section ul > p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 /* Accueil */
@@ -310,15 +319,6 @@ a:visited {
   padding: 3rem 25%;
   margin: auto;
 }
-.main-section ul {
-  list-style-position: inside;
-  margin-bottom: 2rem;
-}
-
-.main-section ul > p {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
 
 /* Thetahealing */
 .theta-page-description {
@@ -332,18 +332,6 @@ a:visited {
   align-self: center;
   margin-bottom: 2rem;
   zoom: 1.3;
-}
-.theta-page-description ul {
-  list-style-position: inside;
-  margin-bottom: 2rem;
-}
-.theta-page-description ul > li {
-  font-size: 1.9rem;
-  line-height: 1.5;
-}
-.theta-page-description ul > p {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
 /* Retour de soins */
@@ -480,6 +468,10 @@ a:visited {
   }
   li {
     font-size: var(--p-responsive);
+  }
+  .main-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .header-menu h2 {
     width: 20rem;
