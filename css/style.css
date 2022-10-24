@@ -188,6 +188,7 @@ a:visited {
 #nav-meditation {
   display: none;
   margin-top: 1.5rem;
+  margin-left: 2rem;
   position: absolute;
   z-index: 2;
   list-style-type: none;
