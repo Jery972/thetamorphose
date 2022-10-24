@@ -615,7 +615,6 @@ a:visited {
   span {
     text-decoration: none;
     display: flex;
-
     padding: 1.4rem;
   }
   #nav-links a:hover {
@@ -634,13 +633,23 @@ a:visited {
   #nav-links li:hover {
     background: var(--main-color);
   }
-  #nav-links li:first-child:hover {
-    background: var(--main-color);
+  #nav-links li:hover > span,
+  a {
+    color: var(--click-link-color);
+  }
+  #nav-links li:first-child {
     border-radius: 3px 3px 0px 0px;
   }
-  #nav-links li:last-child:hover {
-    background: var(--main-color);
+  #nav-links li:last-child {
     border-radius: 0px 0px 3px 3px;
+  }
+  #nav-meditation {
+    margin-top: -4.9rem;
+    margin-left: 17rem;
+  }
+  #nav-thetahealing {
+    margin-top: -4.9rem;
+    margin-left: 17rem;
   }
   .biographie-top {
     flex-direction: column;
