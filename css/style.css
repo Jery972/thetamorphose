@@ -344,6 +344,15 @@ a:visited {
   zoom: 1.3;
 }
 
+/* Entreprenariat */
+.entreprenariat-page img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /* Retour de soins */
 .temoignages-line {
   display: flex;
