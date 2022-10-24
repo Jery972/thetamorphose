@@ -16,6 +16,7 @@ html {
   --h-color: #000000;
   --text-color: #333333;
   --link-hover-color: #bbbcbc;
+  --click-link-color: #f1f7bc;
   --header1-responsive: calc(2rem + 1vw);
   --header2-responsive: calc(1.3rem + 1vw);
   --p-responsive: calc(1.2rem + 1vw);
@@ -163,7 +164,7 @@ a:visited {
   color: var(--main-color);
 }
 #nav-thetahealing a:hover {
-  color: #f1f7bc;
+  color: var(--click-link-color);
 }
 #nav-thetahealing li {
   font-size: 1.4rem;
@@ -205,7 +206,7 @@ a:visited {
   color: var(--main-color);
 }
 #nav-meditation a:hover {
-  color: #f1f7bc;
+  color: var(--click-link-color);
 }
 #nav-meditation li {
   font-size: 1.4rem;
@@ -367,6 +368,77 @@ a:visited {
   object-fit: cover;
   margin-bottom: 1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Videos */
+.meditation-videos {
+  margin-bottom: 6rem;
+}
+.acordion-video {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  color: white;
+  font-weight: bold;
+  background-color: var(--main-color);
+  cursor: pointer;
+  padding: 1.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  gap: 1rem;
+}
+.active-video,
+.acordion-video:hover {
+  background-color: var(--second-color);
+}
+.acordion-video:after {
+  content: "\276F";
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.active-video:after {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.middle {
+  border: solid var(--second-color);
+  border-width: 0.1rem 0;
+}
+.list-video {
+  background-color: #f2fbf2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out;
+}
+.video-article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.video-article:first-child {
+  margin-top: 2rem;
+}
+
+.video-article:last-child {
+  margin-bottom: 2rem;
+}
+.video-article div {
+  width: 50%;
+}
+.video-article p {
+  width: 50%;
+  text-align: justify;
+  margin-bottom: 0;
+  padding: 1.5rem;
+}
+.reverse {
+  flex-direction: row-reverse;
 }
 
 /* Retour de soins */
@@ -540,7 +612,7 @@ a:visited {
     padding: 1.4rem;
   }
   #nav-links a:hover {
-    color: #f1f7bc;
+    color: var(--click-link-color);
   }
   #nav-links li {
     font-weight: bold;
@@ -582,6 +654,22 @@ a:visited {
   .theta-page-description img {
     zoom: normal;
     max-width: 100%;
+  }
+  .acordion-video {
+    font-size: var(--p-responsive);
+    line-height: normal;
+    padding: 12px;
+  }
+
+  .video-article {
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+  .video-article p {
+    width: 100%;
+  }
+  .video-article div {
+    width: 100%;
   }
 }
 
