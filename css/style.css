@@ -114,6 +114,22 @@ a:visited {
   color: var(--link-hover-color);
   text-decoration: none;
 }
+#link-nav-theta {
+  padding: 0.7rem;
+  color: var(--main-color);
+  cursor: pointer;
+}
+#link-nav-theta:hover {
+  color: var(--link-hover-color);
+}
+#link-nav-medita {
+  padding: 0.7rem;
+  color: var(--main-color);
+  cursor: pointer;
+}
+#link-nav-medita:hover {
+  color: var(--link-hover-color);
+}
 #menu-icon {
   display: none;
 }
