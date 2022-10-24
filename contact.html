@@ -21,8 +21,40 @@
     <header class="main-head"></header>
     <section class="main-section">
       <h2 class="title-section">Contact</h2>
-      <div>
-        <p>En construction</p>
+      <div class="contact-page">
+        <form
+          class="form-contact"
+          action="https://formcarry.com/s/sk1cNCQ3B"
+          method="POST"
+          accept-charset="UTF-8"
+        >
+          <label for="firstName">Votre prénom: </label>
+          <input type="text" name="Prenom" id="firstName" required />
+          <label for="mail">Votre Email: </label>
+          <input type="email" name="Mail" id="mail" required />
+          <label for="phoneNum">Votre téléphone: </label>
+          <input
+            type="tel"
+            name="Numero"
+            id="phoneNum"
+            pattern="[0-9]{10}"
+            placeholder="0123456789"
+            maxlength="10"
+            required
+          />
+          <label for="theme">Votre Theme: </label>
+          <input type="text" name="Theme" id="theme" required />
+          <label for="lieu"
+            >Souhaitez vous une séance à distance ou en présenciel ?
+          </label>
+          <input type="text" name="Lieu" id="lieu" required />
+          <label for="story">Quel est votre besoin:</label>
+          <textarea id="story" name="Histoire" rows="5" cols="33" required>
+...
+</textarea
+          >
+          <button type="submit">Envoyer</button>
+        </form>
       </div>
     </section>
     <footer class="main-foot"></footer>

@@ -507,6 +507,12 @@ a:visited {
   content: url("../images/icons/minus.png");
 }
 
+/* Contact Page */
+.form-contact {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Contact Button */
 .div-button-contact {
   display: flex;
