@@ -606,12 +606,21 @@ a:visited {
     box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.25);
     z-index: 1;
   }
-  #nav-links a {
+  #nav-links span {
+    padding: 1.4rem;
+    display: flex;
+  }
+  #nav-links a,
+  span {
     text-decoration: none;
     display: flex;
+
     padding: 1.4rem;
   }
   #nav-links a:hover {
+    color: var(--click-link-color);
+  }
+  #nav-links span:hover {
     color: var(--click-link-color);
   }
   #nav-links li {
