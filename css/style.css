@@ -577,7 +577,9 @@ a:visited {
   display: flex;
   justify-content: center;
 }
-.div-button-contact a {
+.div-button-contact a,
+.div-button-contact button {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -594,7 +596,8 @@ a:visited {
   font-weight: bold;
   text-align: center;
 }
-.div-button-contact a:hover {
+.div-button-contact a:hover,
+.div-button-contact button:hover {
   background-color: var(--second-color);
   border: solid var(--second-color);
   color: #ffffff;
@@ -743,7 +746,8 @@ a:visited {
   .temoignages-line {
     margin-bottom: 3rem;
   }
-  .div-button-contact a {
+  .div-button-contact a,
+  .div-button-contact button {
     font-size: 1.3rem;
     width: 15rem;
   }
