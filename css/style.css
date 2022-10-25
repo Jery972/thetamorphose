@@ -523,11 +523,22 @@ a:visited {
   margin-bottom: 0.4rem;
   font-weight: bold;
 }
+.select-sujet {
+  font-size: 1.6rem;
+  padding: 1rem 1rem;
+  border: 1px solid rgba(153, 153, 153, 0.4);
+  margin-bottom: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.select-sujet:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+
 .form-contact input {
   font-size: 1.6rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   margin-bottom: 1.8rem;
-  height: 4.2rem;
   border: 1px solid rgba(153, 153, 153, 0.4);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -644,6 +655,15 @@ a:visited {
     height: 96px;
   }
   .form-contact label {
+    font-size: var(--p-responsive);
+  }
+  .form-contact input {
+    font-size: var(--p-responsive);
+  }
+  .form-contact textarea {
+    font-size: var(--p-responsive);
+  }
+  .form-contact select {
     font-size: var(--p-responsive);
   }
   #menu-icon {

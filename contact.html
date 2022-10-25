@@ -20,7 +20,7 @@
   <body>
     <header class="main-head"></header>
     <section class="main-section">
-      <h2 class="title-section">Besoin d'accompagnement ?</h2>
+      <h2 class="title-section">Contact</h2>
       <p>
         Envoyez moi une demande pour me rencontrer et je viendrais à vous dès
         que possible.
@@ -40,8 +40,6 @@
             maxlength="30"
             required
           />
-          <label for="mail">Votre adresse email : </label>
-          <input type="email" name="Mail" id="mail" maxlength="50" required />
           <label for="phoneNum">Votre téléphone : </label>
           <input
             type="tel"
@@ -51,12 +49,25 @@
             maxlength="10"
             required
           />
+          <label for="mail">Et / ou votre adresse email: </label>
+          <input type="email" name="Mail" id="mail" maxlength="50" required />
           <label for="theme">Quel sujet voulez vous aborder ?</label>
-          <input type="text" name="Theme" id="theme" required />
+          <select class="select-sujet" name="Theme" id="theme">
+            <option value="0">-</option>
+            <option value="1">Adultes</option>
+            <option value="2">Enfants et adolescents</option>
+            <option value="3">Besoin de réponses</option>
+            <option value="4">Entreprenariat</option>
+            <option value="5">Autres</option>
+          </select>
           <label for="lieu"
             >Souhaitez vous une séance à distance ou sur place ?
           </label>
-          <input type="text" name="Lieu" id="lieu" required />
+          <select class="select-sujet" name="Lieu" id="lieu">
+            <option value="0">-</option>
+            <option value="1">Distance</option>
+            <option value="2">Sur place</option>
+          </select>
           <label for="story">Raconter moi votre histoire :</label>
           <textarea
             id="story"
