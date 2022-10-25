@@ -98,3 +98,19 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//SUBMIT FORM CONTACT
+
+function submitContact() {
+  const form = document.getElementById("form-contact");
+  const inputs = document.getElementById("form-contact").elements;
+  if (!form.reportValidity()) {
+    return false;
+  }
+  if (!inputs["Numero"].value.trim() && !inputs["Mail"].value.trim()) {
+    return alert(
+      "Veuillez remplir un téléphone ou une adresse pour pouvoir vous recontacter"
+    );
+  }
+  form.submit();
+}

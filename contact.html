@@ -27,12 +27,12 @@
       </p>
       <div class="contact-page">
         <form
-          class="form-contact"
+          id="form-contact"
           action="https://formcarry.com/s/sk1cNCQ3B"
           method="POST"
           accept-charset="UTF-8"
         >
-          <label for="firstName">Votre prénom : </label>
+          <label for="firstName">Votre prénom</label>
           <input
             type="text"
             name="Prenom"
@@ -40,35 +40,36 @@
             maxlength="30"
             required
           />
-          <label for="phoneNum">Votre téléphone : </label>
+          <label for="phoneNum">Votre téléphone</label>
           <input
             type="tel"
             name="Numero"
             id="phoneNum"
             pattern="[0-9]{10}"
             maxlength="10"
-            required
           />
-          <label for="mail">Et / ou votre adresse email: </label>
-          <input type="email" name="Mail" id="mail" maxlength="50" required />
+          <label for="mail">Et / ou votre adresse email</label>
+          <input type="email" name="Mail" id="mail" maxlength="50" />
           <label for="theme">Quel sujet voulez vous aborder ?</label>
-          <select class="select-sujet" name="Theme" id="theme">
-            <option value="0">-</option>
-            <option value="1">Adultes</option>
-            <option value="2">Enfants et adolescents</option>
-            <option value="3">Besoin de réponses</option>
-            <option value="4">Entreprenariat</option>
-            <option value="5">Autres</option>
+          <select class="select-sujet" name="Theme" id="theme" required>
+            <option value="">-</option>
+            <option value="Adultes">Adultes</option>
+            <option value="Enfants et adolescents">
+              Enfants et adolescents
+            </option>
+            <option value="Besoin de réponses">Besoin de réponses</option>
+            <option value="Entreprenariat">Entreprenariat</option>
+            <option value="Autres">Autres</option>
           </select>
           <label for="lieu"
             >Souhaitez vous une séance à distance ou sur place ?
           </label>
-          <select class="select-sujet" name="Lieu" id="lieu">
-            <option value="0">-</option>
-            <option value="1">Distance</option>
-            <option value="2">Sur place</option>
+          <select class="select-sujet" name="Lieu" id="lieu" required>
+            <option value="">-</option>
+            <option value="Distance">Distance</option>
+            <option value="Sur place">Sur place</option>
           </select>
-          <label for="story">Raconter moi votre histoire :</label>
+          <label for="story">Raconter moi votre histoire</label>
           <textarea
             id="story"
             name="Histoire"
@@ -76,7 +77,12 @@
             maxlength="1000"
             required
           ></textarea>
-          <button class="envoyer-form" type="submit">Envoyer</button>
+          <input
+            id="envoyer-form"
+            type="button"
+            onclick="submitContact()"
+            value="Envoyer"
+          />
         </form>
       </div>
     </section>
