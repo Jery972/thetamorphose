@@ -658,6 +658,9 @@ a:visited {
   .description-thetahealing div {
     max-width: 100%;
   }
+  .iframe-podcast {
+    height: 10rem;
+  }
 }
 
 /* Responsive 700px*/
@@ -800,6 +803,9 @@ a:visited {
     width: 100%;
   }
   .video-article div {
+    width: 100%;
+  }
+  .iframe-podcast {
     width: 100%;
   }
 }
