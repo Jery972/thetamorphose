@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* * {
   box-sizing: border-box;
 }
@@ -33,15 +40,25 @@ button {
 button span {
   position: relative;
   display: inline-block;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .previous:hover span {
+  -webkit-transform: translateX(-10px) scale(1.2);
+  -ms-transform: translateX(-10px) scale(1.2);
   transform: translateX(-10px) scale(1.2);
 }
 
 .next:hover span {
+  -webkit-transform: translateX(10px) scale(1.2);
+  -ms-transform: translateX(10px) scale(1.2);
   transform: translateX(10px) scale(1.2);
 }
 
@@ -53,11 +70,16 @@ button span {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .slider-nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
@@ -66,8 +88,10 @@ button span {
   /* object-position: 0% 10%; */
   width: 100%;
   height: 400px;
+  -o-object-fit: cover;
   object-fit: cover;
   display: none;
+  -webkit-box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
   box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
 }
 
@@ -88,8 +112,13 @@ button span {
 } */
 
 .slider-nav a {
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
