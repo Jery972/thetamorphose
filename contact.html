@@ -19,74 +19,76 @@
   </head>
   <body>
     <header class="main-head"></header>
-    <section class="main-section">
-      <h2 class="title-section">Contact</h2>
-      <p>
-        Envoyez moi une demande pour me rencontrer et je viendrais à vous dès
-        que possible.
-      </p>
-      <div class="contact-page">
-        <form
-          id="form-contact"
-          action="https://formcarry.com/s/sk1cNCQ3B"
-          method="POST"
-          accept-charset="UTF-8"
-        >
-          <label for="firstName">Votre prénom</label>
-          <input
-            type="text"
-            name="Prenom"
-            id="firstName"
-            maxlength="30"
-            required
-          />
-          <label for="phoneNum">Votre téléphone</label>
-          <input
-            placeholder="0123456789"
-            type="tel"
-            name="Numero"
-            id="phoneNum"
-            pattern="[0-9]{10}"
-            maxlength="10"
-          />
-          <label for="mail">Et / ou votre adresse email</label>
-          <input type="email" name="Mail" id="mail" maxlength="50" />
-          <label for="theme">Quel sujet voulez vous aborder ?</label>
-          <select class="select-sujet" name="Theme" id="theme" required>
-            <option value="">-</option>
-            <option value="Adultes">Adultes</option>
-            <option value="Enfants et adolescents">
-              Enfants et adolescents
-            </option>
-            <option value="Besoin de réponses">Besoin de réponses</option>
-            <option value="Entreprenariat">Entreprenariat</option>
-            <option value="Autres">Autres</option>
-          </select>
-          <label for="lieu"
-            >Souhaitez vous une séance à distance ou sur place ?
-          </label>
-          <select class="select-sujet" name="Lieu" id="lieu" required>
-            <option value="">-</option>
-            <option value="Distance">Distance</option>
-            <option value="Sur place">Sur place</option>
-          </select>
-          <label for="story">Raconter moi votre histoire</label>
-          <textarea
-            id="story"
-            name="Histoire"
-            rows="8"
-            maxlength="1000"
-            required
-          ></textarea>
-          <input
-            id="envoyer-form"
-            type="button"
-            onclick="submitContact()"
-            value="Envoyer"
-          />
-        </form>
-      </div>
-    </section>
+    <main>
+      <section class="main-section">
+        <h2 class="title-section">Contact</h2>
+        <p>
+          Envoyez moi une demande pour me rencontrer et je viendrais à vous dès
+          que possible.
+        </p>
+        <div class="contact-page">
+          <form
+            id="form-contact"
+            action="https://formcarry.com/s/sk1cNCQ3B"
+            method="POST"
+            accept-charset="UTF-8"
+          >
+            <label for="firstName">Votre prénom</label>
+            <input
+              type="text"
+              name="Prenom"
+              id="firstName"
+              maxlength="30"
+              required
+            />
+            <label for="phoneNum">Votre téléphone</label>
+            <input
+              placeholder="0123456789"
+              type="tel"
+              name="Numero"
+              id="phoneNum"
+              pattern="[0-9]{10}"
+              maxlength="10"
+            />
+            <label for="mail">Et / ou votre adresse email</label>
+            <input type="email" name="Mail" id="mail" maxlength="50" />
+            <label for="theme">Quel sujet voulez vous aborder ?</label>
+            <select class="select-sujet" name="Theme" id="theme" required>
+              <option value="">-</option>
+              <option value="Adultes">Adultes</option>
+              <option value="Enfants et adolescents">
+                Enfants et adolescents
+              </option>
+              <option value="Besoin de réponses">Besoin de réponses</option>
+              <option value="Entreprenariat">Entreprenariat</option>
+              <option value="Autres">Autres</option>
+            </select>
+            <label for="lieu"
+              >Souhaitez vous une séance à distance ou sur place ?
+            </label>
+            <select class="select-sujet" name="Lieu" id="lieu" required>
+              <option value="">-</option>
+              <option value="Distance">Distance</option>
+              <option value="Sur place">Sur place</option>
+            </select>
+            <label for="story">Raconter moi votre histoire</label>
+            <textarea
+              id="story"
+              name="Histoire"
+              rows="8"
+              maxlength="1000"
+              required
+            ></textarea>
+            <input
+              id="envoyer-form"
+              type="button"
+              onclick="submitContact()"
+              value="Envoyer"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
     <footer class="main-foot"></footer>
     <script src="scripts/myScript.js"></script>
   </body>
