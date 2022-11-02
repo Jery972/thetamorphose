@@ -432,6 +432,16 @@ a:visited {
   margin-bottom: 2rem;
   zoom: 1.3;
 }
+/* Adultes */
+.deroulement-seance {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  background: #f2fbf2;
+}
+.deroulement-seance p:last-child {
+  margin-bottom: 0;
+}
 
 /* Entreprenariat */
 .entreprenariat-page img {
