@@ -61,6 +61,17 @@ li {
   color: var(--text-color);
 }
 
+.header-menu2 {
+  background: red;
+  display: flex;
+  /* width: 100%; */
+}
+.header-menu2 img {
+  background: red;
+  width: 100%;
+  max-height: 128px;
+  object-fit: contain;
+}
 /* Header */
 .header-menu {
   display: -webkit-box;
@@ -89,6 +100,8 @@ li {
 .index-link-header-menu img {
   max-height: 128px;
   margin-right: 1rem;
+  width: 100%;
+  object-fit: contain;
 }
 .index-link-header-menu div {
   text-align: left;
