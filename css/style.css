@@ -726,6 +726,9 @@ a:visited {
 #envoyer-form:hover {
   background-color: var(--second-color);
 }
+#input-website {
+  display: none !important;
+}
 
 /* Contact Button */
 .div-button-contact {

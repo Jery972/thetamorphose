@@ -126,5 +126,8 @@ function submitContact() {
       "Veuillez remplir un téléphone ou une adresse pour pouvoir vous recontacter"
     );
   }
+  if (inputs["website"].value.length != 0) {
+    return false;
+  }
   form.submit();
 }
