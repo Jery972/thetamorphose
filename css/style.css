@@ -304,6 +304,19 @@ a:visited {
   font-weight: normal;
 }
 
+.last-foot a {
+  text-decoration: none;
+}
+.last-foot a:link {
+  color: white;
+}
+.last-foot a:visited {
+  color: white;
+}
+.last-foot a:hover {
+  color: var(--click-link-color);
+}
+
 /* Main section */
 .main-section {
   max-width: 104rem;
