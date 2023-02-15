@@ -24,7 +24,7 @@ html {
   --h-color: #000000;
   --text-color: #333333;
   --link-hover-color: #bbbcbc;
-  --click-link-color: #f1f7bc;
+  --click-link-color: rgb(241, 247, 188);
   --header1-responsive: calc(2rem + 1vw);
   --header2-responsive: calc(1.3rem + 1vw);
   --p-responsive: calc(1.2rem + 1vw);

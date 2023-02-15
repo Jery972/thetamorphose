@@ -1,0 +1,12 @@
+- Réveilles en toi le meilleur, car il est en toi.	ok
+- Guéris ton passé pour illuminer ton présent		ok
+- Le bonheure est plus simple qu'on ne le croit		ok
+- La colère est le plus grand poison de ton existence
+- L'amour et le pardon sont les ingrédients les plus puissants de la recette du bonheur	ok
+- S'affirmer, ce n'est pas écraser l'autre mais faire exister sa place dans le tout	ok
+- Libères toi de tes croyances limitantes et métamorphoses ta vie	ok
+
+color:rgb(241, 247, 188)
+font:Pristina
+taille 36
+ombre porté 3/3 opa 90 noir
