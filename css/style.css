@@ -618,6 +618,8 @@ a:visited {
   box-shadow: 5px 10px 20px 0px #8888882e;
   border-radius: 40px;
   min-width: 28rem;
+  min-height: 335px;
+  max-height: fit-content;
 }
 .review p {
   font-size: 1.5rem;
