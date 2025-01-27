@@ -105,7 +105,7 @@ for (i = 0; i < acc.length; i++) {
 $(document).ready(function () {
   if (urlParams.get("sujet")) {
     valueForSelect = parseInt(urlParams.get("sujet"));
-    if (!Number.isNaN(valueForSelect) && valueForSelect < 5) {
+    if (!Number.isNaN(valueForSelect) && valueForSelect < 6) {
       const themeSelect = document.getElementById("theme");
       themeSelect.querySelectorAll("option")[valueForSelect].selected =
         "selected";
